@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <title>Reconocedor Léxico - Universidad Nacional Mayor de San Marcos</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h1>Reconocedor Léxico</h1>
+        </div>
+
+        <div class="header-container">
+            <div class="header-text">
+            
+                <h2>Universidad Nacional Mayor de San Marcos</h2>
+                <h3>Facultad de Ingeniería de Sistemas e Informática</h3>
+                <h4>Ingeniería de Sistemas - Lenguajes y Compiladores</h4>
+            </div>
+            <div class="header-img">
+                <img src="./Icons/sanmarcos.jpg" alt="">
+            </div>
+        </div>
+
+
+    </header>
+    <aside class="sidebar">
+        <h2>Integrantes</h2>
+        <ul>
+            <li>Loli Collantes, Nilton Daniel</li>
+            <li>Lujan Aguero Jose María</li>
+            <li>Chirinos Huerta Michael David</li>
+            <li>Bermejo Mendoza Darwin Karls</li>
+        </ul>
+        <h2>Docente</h2>
+        <ul>
+            <li>Pariona Quispe Jaisme Ruben</li>
+        </ul>
+        
+    </aside>
+    <div class="container">
+        <label for="fileInput">Subir archivo de texto:</label>
+        <input type="file" id="fileInput">
+        <label for="textInput">Ingresar texto:</label>
+        <textarea id="textInput" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+
+        <div class="button-container">
+            <button id="processButton" onclick="analizarTexto()">Procesar</button>
+            <button id="fullscreenButton">Ver Autómata</button>
+        </div>
+
+        <img src="./Icons/automatafinal.jpg" id="fullscreenImage" alt="Imagen del Autómata" style="display: none;">
+        
+        <div id="output">
+            <h2>Resultado del análisis:</h2>
+            <pre id="textResult"></pre> 
+            <pre id="fileText"></pre> 
+        </div>
+    </div>
+    <div class="footer">
+        © 2023 Universidad Nacional Mayor de San Marcos - Reconocedor Léxico
+    </div>
+
+    <script src="./Javascript/automata.js"></script>
+    <script src="./Javascript/analizador.js"></script>
+</body>
+</html>

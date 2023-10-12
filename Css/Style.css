@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar container"
+        "footer footer";
+    grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #004084;
+    color: #fff;
+    text-align: start;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-img img{
+    width: 170px;
+}
+.header-text{
+    text-align: start;
+}
+
+.container {
+    grid-area: container;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="file"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin: 20px 0;
+    text-align: center;
+}
+
+pre {
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
