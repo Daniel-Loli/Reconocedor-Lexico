@@ -108,13 +108,14 @@ pre {
 }
 
 .sidebar ul {
-    list-style: none;
+    list-style:square;
     padding: 0;
 }
 
 .sidebar li {
     font-size: 18px;
     margin: 5px 0;
+
 }
 
 .footer {
